@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 14px Roboto, sans-serif;
+    background: lightgray;
+    -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea {
+    font: 400 18px Roboto, sans-serif;
+}
+
+header {
+    display: inline-flex;
+    background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header .logo {
+    display: inline-flex;
+    align-items: center;
+    width: 50%;
+    padding: 2vh 2vw;
+    margin: auto 4vw;
+}
+
+header .logo .imgLogo {
+    margin-right: 20px;
+    height: 40px;
+    width: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: #5C103C;
+}
+
+header nav {
+    width: 50%;
+    margin: auto 4vw;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+  
+header nav ul li a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    font: 400 20px Roboto, sans-serif;
+    color: #fff
+}
+
+header nav ul li a:hover {
+    background-color: #111;
+}
+  
+header nav ul li a.active {
+    background-color: #4CAF50;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        display: block;
+    }
+    
+    header .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 -8px;
+    }
+    
+    header nav {
+        font: 400 16px Roboto, sans-serif;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+}
