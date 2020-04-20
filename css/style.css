@@ -19,7 +19,7 @@ input, button, textarea {
 
 header {
     display: inline-flex;
-    background: rgba(0, 0, 0, 0.6);
+    background: #000;
 	position: fixed;
     width: 100%;
     top: 0;
@@ -41,6 +41,7 @@ header .logo .imgLogo {
 
 header a {
     text-decoration: none;
+    background-color: transparent;
     color: #5C103C;
 }
 
@@ -66,11 +67,131 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #111;
+    border-bottom: 5px solid #4CAF50;
+    color: #4CAF50;
 }
   
 header nav ul li a.active {
     background-color: #4CAF50;
+    color: #fff;
+    border: none;
+}
+
+main {
+    margin-top: 12vh;
+}
+
+main section {
+    margin-bottom: 6vh;
+}
+
+main h2 {
+    color: #5C103C;
+}
+
+main .section-news .news-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 5vh 5vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .section-news .news-list article {
+    width: 840px;
+    margin-bottom: 4vh;
+}
+
+main .section-news .news-list .img-article {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+main .section-videos .video-list {
+    margin: 6vh 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .section-audios .audio-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+
+main .section-audios .audio-list .audio {
+    margin-top: 3vh;
+}
+
+footer {
+    background: #000;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+}
+
+footer .footer-first-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+footer .footer-first-row h4 {
+    top: 0;
+}
+
+footer .footer-first-row ul {
+    list-style-type: none;
+    margin: auto 4vw;
+}
+
+footer .footer-first-row a {
+    text-decoration: none;
+    color: #fff;
+    font: 400 10px Roboto, sans-serif;
+}
+
+
+footer .footer-first-row .footer-institutional {
+    text-align: center;
+    width: 50%;
+    padding: 20px 10px;
+}
+
+footer .footer-first-row .footer-social-media {
+    text-align: center;
+    width: 50%;
+    padding: 20px 10px;
+}
+
+footer .footer-first-row .footer-social-media .icons {
+    display: inline-flex;
+}
+
+footer .footer-first-row .footer-social-media .icons img {
+    margin: 10px 10px;
+}
+
+footer .footer-second-row {
+    text-align: center;
+    color: #5C103C;
+    line-height: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -91,5 +212,9 @@ header nav ul li a.active {
         text-align: left;
         width: 100%;
         margin: 0;
+    }
+
+    main {
+        margin-top: 18vh;
     }
 }

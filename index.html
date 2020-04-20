@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Import CSS Style -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.13.0-web/css/font-awesome.min.css">
     
     <title>CoronaNews</title>
     <link rel="icon" href="img/coronaIcon.ico">
 </head>
 <body>
+
     <!-- Header -->
-    <header>
+    <header id="header">
         <!-- Logo -->
         <div class="logo">
             <img class="imgLogo" src="img/coronaLogo.png" alt="Corona virus icon">
@@ -27,13 +29,93 @@
             </ul>
         </nav>
     </header>
-    <!-- Section -->
-    <section>
 
-    </section>
+    <!-- Main -->
+    <main id="main">
+        <section class="section-news">
+            <h2>NOTÍCIAS</h2>    
+            <hr />
+            <div class="news-list">
+                <article>
+                    <a href="https://coronavirus.saude.gov.br/">
+                        <img class="img-article" src="img/ministerio_da_saude_logo.jpg" alt="Ministério da saúde"/>
+                        <h1>Ministério da saúde</h1>
+                        <p>Site oficial do ministério da saúde com as últimas informações sobre a pandemia da COVID-19.</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://coronavirus.saude.gov.br/">
+                        <img class="img-article" src="img/una_sus.jpg" alt="Una SUS"/>
+                        <h1>Una SUS</h1>
+                        <p>Universidade Aberta do SUS (UNA-SUS)</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <section class="section-videos">
+            <h2>VÍDEOS</h2>    
+            <hr />
+            <div class="video-list">
+                <div class="videos">
+                    <iframe width="420" height="300" src="https://www.youtube.com/embed/rfoy1FQ40vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="videos">
+                    <iframe width="420" height="300" src="https://www.youtube.com/embed/1LSGx_ShpVk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="videos">
+                    <iframe width="420" height="300" src="https://www.youtube.com/embed/ha7BcxuCpDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="videos">
+                    <iframe width="420" height="300" src="https://www.youtube.com/embed/2h8vc-voPNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="section-audios">
+            <h2>ÁUDIOS</h2>    
+            <hr />
+            <div class="audio-list">
+                <div class="audio">
+                    <h3>OMS Decreta Pandemia de COVID-19</h3>
+                    <audio controls="">
+                        <source src="audio/OMS_decreta_pandemia_de_COVID-19.mp3" type="audio/mpeg">    
+                    </audio>
+                </div>
+                <div class="audio">
+                    <h3>O que a COVID-19 faz com o corpo</h3>
+                    <audio controls="">
+                        <source src="audio/O_que_a_COVID-19_faz_com_o_seu_corpo.mp3" type="audio/mpeg">    
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
+        <div class="footer-first-row">
+            <div class="footer-institutional">
+            <h4>INSTITUCIONAL</h4>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                        <li><a href="./saiba_mais.html">Saiba Mais</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-social-media">
+                <h4>SOBRE O DESENVOLVEDOR</h4>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/willian-nunes-parente/"><img src="img/linkedin.png" alt="Linkedin"></a>
+                    <a href="https://github.com/WillParente"><img src="img/github.png" alt="Github"></a>
+                </div>
+            </div>
+        </div>
 
+        <div class="footer-second-row">
+            <p>2020 &copy; Copyright - Todos os direitos reservados.</p>
+        </div> 
     </footer>
 </body>
 </html>
