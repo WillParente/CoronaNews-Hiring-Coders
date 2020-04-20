@@ -78,6 +78,7 @@ header nav ul li a.active {
 }
 
 main {
+    min-height: 60vh;
     margin-top: 12vh;
 }
 
@@ -87,6 +88,7 @@ main section {
 
 main h2 {
     color: #5C103C;
+    margin-left: 3vw;
 }
 
 main .section-news .news-list {
@@ -133,6 +135,41 @@ main .section-audios .audio-list {
 
 main .section-audios .audio-list .audio {
     margin-top: 3vh;
+}
+
+main .content {
+    margin-left: 3vw;
+}
+
+main .content form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+main .content form fieldset {
+    margin: 3vh 0;
+}
+
+main .content form input, textarea {
+    width: 100%;
+    height: 100%;
+}
+
+main .content button {
+    width: 10vw;
+    height: 4vh;
+}
+
+main .content h1 {
+    color: #5C103C;
+    text-transform: uppercase;
+    font: 700 30px Roboto, sans-serif;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+}
+
+main .content p {
+    color: #000;
 }
 
 footer {
@@ -216,5 +253,10 @@ footer .footer-second-row {
 
     main {
         margin-top: 18vh;
+    }
+
+    main .content form {
+        width: 90%;
+        margin: 0 auto;
     }
 }
