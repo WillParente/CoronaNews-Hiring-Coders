@@ -78,7 +78,7 @@ header nav ul li a.active {
 }
 
 main {
-    min-height: 60vh;
+    min-height: 64.5vh;
     margin-top: 12vh;
 }
 
@@ -170,6 +170,26 @@ main .content h1 {
 
 main .content p {
     color: #000;
+    line-height: 5vh;
+}
+
+main .content ul {
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 6vh;
+}
+
+main .content .dev-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5vh 0;
+}
+
+main .content .dev-content h3 {
+    margin: 5vh 0;
 }
 
 footer {
